@@ -1,0 +1,168 @@
+<html>
+<Head>
+
+	<link rel="stylesheet" href="Assignment.css">
+	<title>SMIT Assignment</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@1000&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<script>
+function doctPara(insertDataP) {
+	let insertData = document.createElement("p");
+	insertData.innerText = insertDataP;
+	document.body.appendChild(insertData);
+	// console.log(insertData);
+	return insertData;
+};
+
+function doctH1(insertDataH1) {
+	let insertData = document.createElement("h1");
+	insertData.innerText = insertDataH1;
+	document.body.appendChild(insertData);
+	// console.log(insertData);
+	return insertData;
+};
+
+function doctH2(insertDataH2) {
+	let insertData = document.createElement("h2");
+	insertData.innerText = insertDataH2;
+	document.body.appendChild(insertData);
+	// console.log(insertData);
+	return insertData;
+};
+
+function doctH3(insertDataH3) {
+	let insertData = document.createElement("h3");
+	insertData.innerText = insertDataH3;
+	document.body.appendChild(insertData);
+	// console.log(insertData);
+	return insertData;
+};
+
+function doctH4(insertDataH4) {
+	let insertData = document.createElement("h4");
+	insertData.innerText = insertDataH4;
+	document.body.appendChild(insertData);
+	// console.log(insertData);
+	return insertData;
+};
+
+function doctH5(insertDataH5) {
+	let insertData = document.createElement("h5");
+	insertData.innerText = insertDataH5;
+	document.body.appendChild(insertData);
+	// console.log(insertData);
+	return insertData;
+};
+
+function doctH6(insertDataH6) {
+	let insertData = document.createElement("h6");
+	insertData.innerText = insertDataH6;
+	document.body.appendChild(insertData);
+	// console.log(insertData);
+	return insertData;
+};
+
+function random(num) {
+var randomNumbers = Math.random() * num;
+randomNumbers = randomNumbers.toFixed(2);
+return randomNumbers;
+}
+</script>
+
+<h1>SMIT Web & App Development - Assignment</h1>
+<h2>Nabeel Khan - KH01210816618</h2>
+
+    <h3>1. Write a JavaScript function that reverse a number.</h3>
+    <form action="JavaScript:void(0)" target="_blank">
+          <h4>Type Loop Limit:</h4>
+        <input type="text" id="RevLoopInput">
+        <input type="button" class="Button" onclick="funcRev()" value="Run">
+    </form>
+	<p id="revLoopOutput"></p>
+<hr>
+    <h3>2. Write a JavaScript function that checks whether a passed string is palindrome or not?</h3>
+	<form action="JavaScript:void(0)" target="_blank">
+        <h4>Type string for Palidrome check:</h4>
+        <input type="text" id="pDrome">
+        <input type="button" class="Button" onclick="pDromeCheck()" value="check">
+    </form>
+	<p id="pDromeOutput"></p>
+<hr>
+	<h3>3. Write a JavaScript function that generates all combinations of a string.</h3>
+	<form action="JavaScript:void(0)" target="_blank">
+		<h4>Type string here for combination: </h4>
+	  <input type="text" id="allComb">
+	  <input type="button" class="Button" onclick="myName()" value="Get">
+  	</form>
+	  <p id="allCombOutput"></p>
+<hr>
+ 	<h3>4. Write a JavaScript function that returns a passed string with letters in alphabetical order.</h3>
+ 	<form action="JavaScript:void(0)" target="_blank">
+	  <h4>Type a string to sort: </h4>
+	<input type="text" id="sortValue">
+	<input type="button" class="Button" onclick="sortName()" value="Sort">
+	</form>
+	<p id="sortValueOutput"></p>
+<hr>
+	<h3>5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.</h3>
+	<form action="JavaScript:void(0)" target="_blank">
+	<h4>Type a string to convert in "First Letter Capital": </h4>
+  <input type="text" id="firstWordCap">
+  <input type="button" class="Button" onclick="toFirstCase()" value="Convert">
+	</form>
+	<p id="firstWordOutput"></p>
+<hr>
+	<h3>6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.</h3>
+	<form action="JavaScript:void(0)" target="_blank">
+	<h4>Type a string sentence to find longest word":</h4>
+	<textarea id="longWord" rows="4" cols="50"> </textarea>
+	<br> <input type="button" class="Button" onclick="bigValue()" value="Find">
+	</form>
+	<p id="findOutput"></p>
+<hr>
+	<h3>7. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.</h3>
+	<form action="JavaScript:void(0)" target="_blank">
+	<h4>Type a string to count vowels in:</h4>
+  	<input type="text" id="countVowles">
+  	<input type="button" class="Button" onclick="vowelCount()" value="Count">
+	</form>
+	<p id="vowlesOutput"></p>
+<hr>
+	<h3>8. Write a JavaScript function that accepts a number as a parameter and check the number is prime or not.</h3>
+	<form action="JavaScript:void(0)" target="_blank">
+	<h4>Type a number to check whether its a prime number or not: </h4>
+  	<input type="number" id="prime">
+  	<input type="button" class="Button" onclick="primeNum()" value="Count">
+	</form>
+	<p id="primeOut"></p>
+<hr>
+	<h3>9. Write a JavaScript function which accepts an argument and returns the type.</h3>
+	<form action="JavaScript:void(0)" target="_blank">
+	<h4>Type something value to check:</h4>
+  	<input type="text" id="checkVal">
+  	<input type="button" class="Button" onclick="argType()" value="Check">
+	</form>
+	<p id="checkType"></p>
+<hr>
+	<h3>10. Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively.</h3>
+	<form action="JavaScript:void(0)" target="_blank">
+	<h4>Type atleast four numbers sepetrated by ",": </h4>
+ 	<input type="text" id="identifyVal">
+  	<input type="button" class="Button" onclick="identifyValue(document.getElementById(`identifyVal`).value)" value="Identify">
+	</form>
+	<p id="identifyOut"></p>
+
+<!-- <h3>10. Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively.</h3>
+<form action="JavaScript:void(0)" target="_blank">
+	Type a number or word to check its type:
+  <input type="text" id="checkType">
+  <input type="button" onclick="argType()" value="Count">
+</form> -->
+</body>
+<script src="Assignment.js"> </script>
+</html>
